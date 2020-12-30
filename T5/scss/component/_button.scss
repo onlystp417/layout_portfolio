@@ -1,0 +1,14 @@
+@mixin button {
+  display: block;
+  width: 210px;
+  margin: auto;
+  padding: 10px 0;
+  text-align: center;
+  font: normal $lato;
+  text-transform: uppercase;
+  &:hover {
+    background: $red;
+    color: $white;
+    transition: .5s;
+  }
+}

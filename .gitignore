@@ -1,0 +1,5 @@
+.vscode/
+node_modules/
+*.psd
+*.sh
+.DS_Store

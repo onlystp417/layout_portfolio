@@ -1,0 +1,57 @@
+.team {
+  > h4 {
+    flex: 0 0 100%;
+    margin-bottom: 35px;
+    text-transform: capitalize;
+    font: normal 1.5em $libre;
+    color: $red;
+    text-align: center;
+  }
+  .label {
+    display: block;
+    flex: 0 0 100%;
+    order: -1;
+    margin-bottom: 35px;
+    p {
+      @include label;
+      padding: 20px 10px;
+      font-size: 1.2em;
+    }
+  }
+  .label::after {
+    @include arrow;
+  }
+  .label::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+.member {
+  flex: 0 0 100%;
+  padding: 0 18%;
+  > div {
+    margin-bottom: 40px;
+    padding: 0 10px;
+    img {
+      margin-bottom: 20px;
+    }
+    h2 {
+      text-transform: capitalize;
+      font: normal 2.5em $libre;
+      color: $red;
+      text-align: center;
+    }
+    h3 {
+      text-transform: capitalize;
+      font: normal 1.1em $lato;
+      text-align: center;
+    }
+  }
+}
+
+.contact {
+  @include button;
+  margin-bottom: 45px;
+  background-color: $black;
+  color: $white;
+}

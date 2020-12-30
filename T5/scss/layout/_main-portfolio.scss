@@ -1,0 +1,60 @@
+.portfolio {
+  .label {
+    display: block;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    padding: 0 25%;
+    z-index: 1;
+    @include mediaquery_phone {
+      padding: 0 30%;
+    }
+    @include mediaquery_pc {
+      padding: 0 36%;
+    }
+    h2 {
+      height: 50px;
+      text-transform: capitalize;
+      @include label;
+      font: normal 1.2em/50px $lato;
+    }
+    &::after {
+      @include arrow;
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+  }
+  .card {
+    div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $fuchsia-opacity;
+      text-align: center;
+      opacity: 0;
+      transition: .5s;
+      &::before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+    h3 {
+      display: inline-block;
+      font: normal 1.6em $libre;
+      color: $white;
+      vertical-align: middle;
+    }
+    h3::first-letter {
+      text-transform: uppercase;
+    }
+  }
+}

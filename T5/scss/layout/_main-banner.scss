@@ -1,0 +1,59 @@
+.banner {
+  background: url(../images/banner.png) center/cover no-repeat ;
+  height: calc(100vh - 62px);
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  text-align: center;
+  color: $white;
+  @media (max-height: 360px) {
+    padding-top: 10vh;
+  }
+  h1 {
+    span:first-child {
+      text-transform: uppercase;
+      font: italic 48px $libre;
+      @include mediaquery_pc {
+        font-size: 60px;
+      }
+    }
+    span:last-child {
+      font: italic 48px $lobster;
+      @include mediaquery_pc {
+        font-size: 60px;
+      }
+    }
+  }
+  h2 {
+    text-transform: capitalize;
+    font: normal 1em $libre;
+    letter-spacing: .3em;
+    margin-bottom: 15vh;
+    @include mediaquery_pc {
+      font-size: 1.5em;
+    }
+    @media (max-height: 360px) {
+      margin-bottom: 8vh;
+    }
+  }
+  p {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 5vh;
+    font: normal 1em/1.5 $libre;
+    @include mediaquery_pc {
+      width: 400px;
+      font-size: 1.25em;
+    }
+  }
+  p:first-letter {
+    text-transform: uppercase;
+  }
+  > span {
+    @include vertical-dot;
+    margin-bottom: 3vh;
+    display: none;
+    @media all and (min-height: 480px) {
+      display: block;
+    }
+  }
+}

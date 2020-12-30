@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville|Lobster&display=swap");
+/* line 2, scss/global/_reset.scss */
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+/* line 6, scss/global/_reset.scss */
+body, h1, h2, h3, h4, p {
+  margin: 0; }
+
+/* line 10, scss/global/_reset.scss */
+a, a:hover {
+  text-decoration: none;
+  color: inherit; }
+
+/* line 5, scss/component/_card.scss */
+.card {
+  display: block;
+  position: relative;
+  flex: 0 0 100%; }
+  /* line 9, scss/component/_card.scss */
+  .card img {
+    width: 100%;
+    vertical-align: middle; }
+
+/* line 1, scss/component/_grid.scss */
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative; }
+
+@media all and (min-width: 576px) {
+  /* line 8, scss/component/_grid.scss */
+  .col-phone-6 {
+    flex: 0 0 50%; } }
+
+@media all and (min-width: 768px) {
+  /* line 14, scss/component/_grid.scss */
+  .col-pad-6 {
+    flex: 0 0 50%; } }
+
+@media all and (min-width: 768px) {
+  /* line 20, scss/component/_grid.scss */
+  .col-pad-4 {
+    flex: 0 0 33.33%; } }
+
+@media all and (min-width: 992px) {
+  /* line 26, scss/component/_grid.scss */
+  .col-pc-3 {
+    flex: 0 0 25%; } }
+
+/* line 1, scss/layout/_header.scss */
+header {
+  background-color: #370835;
+  text-align: center; }
+  /* line 4, scss/layout/_header.scss */
+  header nav {
+    padding: 10px 0; }
+  /* line 7, scss/layout/_header.scss */
+  header a {
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    text-transform: capitalize; }
+    /* line 12, scss/layout/_header.scss */
+    header a:hover {
+      color: #CF4976; }
+
+/* line 1, scss/layout/_main-banner.scss */
+.banner {
+  background: url(../images/banner.png) center/cover no-repeat;
+  height: calc(100vh - 62px);
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  text-align: center;
+  color: #fff; }
+  @media (max-height: 360px) {
+    /* line 1, scss/layout/_main-banner.scss */
+    .banner {
+      padding-top: 10vh; } }
+  /* line 12, scss/layout/_main-banner.scss */
+  .banner h1 span:first-child {
+    text-transform: uppercase;
+    font: italic 48px "Libre Baskerville", "Arial", "Sans-serif"; }
+    @media all and (min-width: 992px) {
+      /* line 12, scss/layout/_main-banner.scss */
+      .banner h1 span:first-child {
+        font-size: 60px; } }
+  /* line 19, scss/layout/_main-banner.scss */
+  .banner h1 span:last-child {
+    font: italic 48px "Lobster", "Arial", "Sans-serif"; }
+    @media all and (min-width: 992px) {
+      /* line 19, scss/layout/_main-banner.scss */
+      .banner h1 span:last-child {
+        font-size: 60px; } }
+  /* line 26, scss/layout/_main-banner.scss */
+  .banner h2 {
+    text-transform: capitalize;
+    font: normal 1em "Libre Baskerville", "Arial", "Sans-serif";
+    letter-spacing: .3em;
+    margin-bottom: 15vh; }
+    @media all and (min-width: 992px) {
+      /* line 26, scss/layout/_main-banner.scss */
+      .banner h2 {
+        font-size: 1.5em; } }
+    @media (max-height: 360px) {
+      /* line 26, scss/layout/_main-banner.scss */
+      .banner h2 {
+        margin-bottom: 8vh; } }
+  /* line 38, scss/layout/_main-banner.scss */
+  .banner p {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 5vh;
+    font: normal 1em/1.5 "Libre Baskerville", "Arial", "Sans-serif"; }
+    @media all and (min-width: 992px) {
+      /* line 38, scss/layout/_main-banner.scss */
+      .banner p {
+        width: 400px;
+        font-size: 1.25em; } }
+  /* line 48, scss/layout/_main-banner.scss */
+  .banner p:first-letter {
+    text-transform: uppercase; }
+  /* line 51, scss/layout/_main-banner.scss */
+  .banner > span {
+    display: block;
+    margin: auto;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-bottom: 3vh;
+    display: none; }
+    @media all and (min-height: 480px) {
+      /* line 51, scss/layout/_main-banner.scss */
+      .banner > span {
+        display: block; } }
+
+/* line 2, scss/layout/_main-portfolio.scss */
+.portfolio .label {
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  padding: 0 25%;
+  z-index: 1; }
+  @media all and (min-width: 576px) {
+    /* line 2, scss/layout/_main-portfolio.scss */
+    .portfolio .label {
+      padding: 0 30%; } }
+  @media all and (min-width: 992px) {
+    /* line 2, scss/layout/_main-portfolio.scss */
+    .portfolio .label {
+      padding: 0 36%; } }
+  /* line 16, scss/layout/_main-portfolio.scss */
+  .portfolio .label h2 {
+    height: 50px;
+    text-transform: capitalize;
+    background: #FF2D49;
+    color: #fff;
+    text-align: center;
+    font: normal 1.2em/50px "Lato", "Arial", "Sans-serif"; }
+  /* line 22, scss/layout/_main-portfolio.scss */
+  .portfolio .label::after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 0px;
+    height: 0px;
+    border-top: 15px solid #FF2D49;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    left: 0;
+    right: 0; }
+
+/* line 30, scss/layout/_main-portfolio.scss */
+.portfolio .card div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #CF4976ee;
+  text-align: center;
+  opacity: 0;
+  transition: .5s; }
+  /* line 40, scss/layout/_main-portfolio.scss */
+  .portfolio .card div::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+  /* line 46, scss/layout/_main-portfolio.scss */
+  .portfolio .card div:hover {
+    opacity: 1; }
+
+/* line 50, scss/layout/_main-portfolio.scss */
+.portfolio .card h3 {
+  display: inline-block;
+  font: normal 1.6em "Libre Baskerville", "Arial", "Sans-serif";
+  color: #fff;
+  vertical-align: middle; }
+
+/* line 56, scss/layout/_main-portfolio.scss */
+.portfolio .card h3::first-letter {
+  text-transform: uppercase; }
+
+/* line 2, scss/layout/_main-team.scss */
+.team > h4 {
+  flex: 0 0 100%;
+  margin-bottom: 35px;
+  text-transform: capitalize;
+  font: normal 1.5em "Libre Baskerville", "Arial", "Sans-serif";
+  color: #FF2D49;
+  text-align: center; }
+
+/* line 10, scss/layout/_main-team.scss */
+.team .label {
+  display: block;
+  flex: 0 0 100%;
+  order: -1;
+  margin-bottom: 35px; }
+  /* line 15, scss/layout/_main-team.scss */
+  .team .label p {
+    background: #FF2D49;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 1.2em; }
+
+/* line 21, scss/layout/_main-team.scss */
+.team .label::after {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 0px;
+  height: 0px;
+  border-top: 15px solid #FF2D49;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent; }
+
+/* line 24, scss/layout/_main-team.scss */
+.team .label::first-letter {
+  text-transform: capitalize; }
+
+/* line 29, scss/layout/_main-team.scss */
+.member {
+  flex: 0 0 100%;
+  padding: 0 18%; }
+  /* line 32, scss/layout/_main-team.scss */
+  .member > div {
+    margin-bottom: 40px;
+    padding: 0 10px; }
+    /* line 35, scss/layout/_main-team.scss */
+    .member > div img {
+      margin-bottom: 20px; }
+    /* line 38, scss/layout/_main-team.scss */
+    .member > div h2 {
+      text-transform: capitalize;
+      font: normal 2.5em "Libre Baskerville", "Arial", "Sans-serif";
+      color: #FF2D49;
+      text-align: center; }
+    /* line 44, scss/layout/_main-team.scss */
+    .member > div h3 {
+      text-transform: capitalize;
+      font: normal 1.1em "Lato", "Arial", "Sans-serif";
+      text-align: center; }
+
+/* line 52, scss/layout/_main-team.scss */
+.contact {
+  display: block;
+  width: 210px;
+  margin: auto;
+  padding: 10px 0;
+  text-align: center;
+  font: normal "Lato", "Arial", "Sans-serif";
+  text-transform: uppercase;
+  margin-bottom: 45px;
+  background-color: #000;
+  color: #fff; }
+  /* line 9, scss/component/_button.scss */
+  .contact:hover {
+    background: #FF2D49;
+    color: #fff;
+    transition: .5s; }
+
+/* line 1, scss/layout/_main-descride.scss */
+.describe {
+  background: url("../images/sea-horse-bg.jpg") center/cover no-repeat fixed;
+  padding: 80px 8% 30px 8%;
+  color: #fff; }
+  @media all and (min-width: 992px) {
+    /* line 1, scss/layout/_main-descride.scss */
+    .describe {
+      background-size: 200%; } }
+  /* line 8, scss/layout/_main-descride.scss */
+  .describe article {
+    column-count: 1;
+    column-gap: 0; }
+    @media all and (min-width: 992px) {
+      /* line 8, scss/layout/_main-descride.scss */
+      .describe article {
+        column-count: 2;
+        column-gap: 9em; } }
+    /* line 15, scss/layout/_main-descride.scss */
+    .describe article h4 {
+      font: normal 1.8em "Libre Baskerville", "Arial", "Sans-serif";
+      text-transform: capitalize;
+      margin-bottom: 15px; }
+    /* line 20, scss/layout/_main-descride.scss */
+    .describe article p {
+      margin-bottom: 15px;
+      font: 400 0.9em "Lato", "Arial", "Sans-serif"; }
+    /* line 24, scss/layout/_main-descride.scss */
+    .describe article .devider {
+      text-align: center;
+      margin-top: 125px;
+      margin-bottom: 65px; }
+      /* line 28, scss/layout/_main-descride.scss */
+      .describe article .devider span {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: #fff;
+        border-radius: 50%;
+        margin: 0 8px; }
+    /* line 33, scss/layout/_main-descride.scss */
+    .describe article .gutter::before {
+      content: "";
+      height: 260px; }
+      @media all and (min-width: 992px) {
+        /* line 33, scss/layout/_main-descride.scss */
+        .describe article .gutter::before {
+          display: block; } }
+  /* line 41, scss/layout/_main-descride.scss */
+  .describe a {
+    display: block;
+    width: 210px;
+    margin: auto;
+    padding: 10px 0;
+    text-align: center;
+    font: normal "Lato", "Arial", "Sans-serif";
+    text-transform: uppercase;
+    padding: 10px 0;
+    margin-top: 125px;
+    background: #fff;
+    color: #000; }
+    /* line 9, scss/component/_button.scss */
+    .describe a:hover {
+      background: #FF2D49;
+      color: #fff;
+      transition: .5s; }
+
+/* line 50, scss/layout/_main-descride.scss */
+.switch {
+  display: block; }
+  @media all and (min-width: 992px) {
+    /* line 50, scss/layout/_main-descride.scss */
+    .switch {
+      display: none; } }
+
+/* line 1, scss/layout/_footer.scss */
+footer {
+  padding: 30px;
+  background: #E5E4E4;
+  text-align: center;
+  text-align: center; }
+  /* line 6, scss/layout/_footer.scss */
+  footer span {
+    text-transform: capitalize; }
+  /* line 9, scss/layout/_footer.scss */
+  footer a {
+    display: inline-block;
+    color: #FF2D49; }
+    /* line 12, scss/layout/_footer.scss */
+    footer a::first-letter {
+      text-transform: uppercase; }
+    /* line 15, scss/layout/_footer.scss */
+    footer a:hover {
+      color: #FF2D49;
+      text-decoration: underline; }

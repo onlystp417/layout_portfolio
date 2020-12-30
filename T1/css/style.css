@@ -1,0 +1,165 @@
+/*-----------------Header-----------------*/
+
+header{
+    background-color: #f0f0f0;
+    /*font-size: 0px;*/
+}
+
+.container_hf{
+    width: 65%;
+    margin: 0 auto;
+}
+
+.logo{
+    display: inline-block ;
+    position: relative;
+    top: 15px;
+}
+
+.logo p{
+    font-size: 0.5em;
+    margin-top: -10px;
+}
+
+nav{
+    position: relative;
+    left: 150px;
+    top: -35px;
+}
+
+nav li{
+    display: inline-block;
+    width: 17%;
+    color: #666666;
+    font-size: 14px;
+}
+
+nav a{
+    color: inherit; /* 移除超連結顏色 */
+    text-decoration: none;  /* 移除超連結底線 */
+}
+
+nav a:hover{
+    color: #ffa64d;
+}
+
+/*-----------------Content-----------------*/
+
+.container{
+    width: 55%;
+    margin: 0 auto;
+    padding: 50px 0;
+    font-size: 0;
+}
+
+.bg{
+    background-color: #fafafa;
+}
+
+.container h1{
+    font-size: 3rem;
+}
+
+.container h2{
+    font-size: 1.2rem;
+    line-height: 3ex;
+}
+
+.container p{
+    font-size: 16px;
+    line-height: 3ex;
+}
+
+#btn{
+    width: 150px;
+    margin: 10px auto 0 auto;
+}
+
+#btn{
+    position: relative;
+    left: 10px;
+}
+
+#btn button{
+    background: linear-gradient(180deg,#ffc00e 50%, #ff8d00 50%);
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 10px 10px;
+}
+
+#btn::after{
+    content: "Don't worry it's for free";
+    width: 200px;
+    position: absolute;
+    font-size: 0.6rem;
+    color: #666666;
+    left: 0px;
+    top: 44px;
+}
+
+#btn p{
+    font-size: 0.7rem;
+}
+
+.top1, .top2{
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+
+.container img{
+    width: 300px;
+    margin-left: 70px;
+}
+
+.content{
+    width: 55%;
+    margin: 40px auto 60px auto;
+    font-size: 0px;
+}
+
+.content h2{
+    font-size: 1.2rem;
+    line-height: 3ex;
+}
+
+.con1{
+    font-size: 16px;
+    line-height: 3ex;
+    display: inline-block;
+    width: 46%;
+    padding-right: 4%;
+}
+
+.con2{
+    font-size: 16px;
+    line-height: 3ex;
+    display: inline-block;
+    width: 46%;
+    padding-left: 4%;
+}
+
+/*-----------------Footer-----------------*/
+
+footer{
+    background-color: #eeeeee;
+    padding: 30px 0;
+    font-size: 0;
+}
+footer p{
+    font-size: 0.6rem;
+    color: #3d3d3d;
+    display: inline-block;
+    width: 50%;
+}
+footer nav{
+    display: inline-block;
+    text-align: right;
+    width: 50%;
+}
+footer nav a{
+    color: #000000;
+    font-size: 1.5rem;
+    padding: 10px;
+}

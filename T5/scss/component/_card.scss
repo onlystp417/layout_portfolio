@@ -1,0 +1,13 @@
+//$phone: 手機螢幕尺寸（576px以上）
+//$pad: 平板螢幕尺寸（768px以上）
+//$pc: 電腦螢幕尺寸（992px以上）
+
+.card {
+  display: block;
+  position: relative;
+  flex: 0 0 100%;
+  img {
+    width: 100%;
+    vertical-align: middle;
+  }
+}

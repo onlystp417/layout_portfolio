@@ -1,0 +1,16 @@
+@mixin vertical-dot {
+  display: block;
+  margin: auto;
+  width: 8px;
+  height: 8px;
+  background-color: $white;
+  border-radius: 50%;
+}
+
+@mixin horizontal-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: $white;
+  border-radius: 50%;
+}

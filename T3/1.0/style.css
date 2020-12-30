@@ -1,0 +1,188 @@
+h1, h2, h3, p {
+  margin: 0;
+}
+
+body {
+  background-image: url(./img/bg-body.jpg);
+}
+
+.container {
+  background-color: #356618;
+}
+
+.underlayer {
+  margin: auto;
+  background: #b9c9b0;
+}
+
+/* ----------opening---------- */
+.opening>a {
+  width: 60%;
+}
+
+.opening>nav a {
+  background-color: #4d4d4d;
+  color: #dfe1bc;
+  border-bottom: #dfe1bc 1px solid;
+}
+
+.opening>nav a:hover {
+  background-color: #daeacf;
+  color: #4d4d4d;
+}
+
+.navbar > button {
+  top: -40px;
+  left: 8px;
+  font-size: 12px;
+}
+
+/* ----------banner---------- */
+.banner {
+  background-image: url(./img/gardening1a.jpg);
+  background-size: cover;
+  background-position: top center;
+  height: 80vh;
+}
+
+.banner>article {
+  background: rgba(20, 20, 20, .7);
+  bottom: 0;
+}
+
+
+.banner h2 {
+  font-size: 1.25rem;
+  color: #eff2a0;
+  font-weight: 400;
+}
+
+@media (min-width: 1200px) {
+  .banner h2 {
+    font-size: 2rem;
+  }
+}
+
+.banner p {
+  font-size: 1rem;
+  color: #fff;
+}
+
+@media (min-width: 1200px) {
+  .banner p {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+}
+
+/* ----------banner-index---------- */
+.banner-index img {
+  vertical-align: middle;
+  width: 120px;
+  margin: 10px 0;
+}
+
+@media (min-width: 992px) {
+  .banner-index img {
+    width: 80px;
+  }
+}
+
+.banner-index h3 {
+  color: #ededa0;
+  font-size: 1.3rem;
+}
+
+.banner-index p {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.banner > div:nth-of-type(3) {
+  border-right: none;
+}
+
+.banner-index > div:nth-of-type(1), .banner-index > div:nth-of-type(2) {
+  border-bottom: 2px solid #3d6e20;
+  box-shadow: 0px 2px 0px 0px #2c5d10;
+}
+
+@media (min-width: 992px) {
+  .banner-index > div:nth-of-type(1), .banner-index > div:nth-of-type(2) {
+    border-bottom: none; 
+    border-right: 2px solid #3d6e20;
+    box-shadow: 2px 0px 0px 0px #2c5d10;
+  }
+}
+
+.banner-index article {
+  vertical-align: middle;
+  width: 68%;
+}
+
+img {
+  width: 100%;
+}
+
+/* --------------main--------------- */
+main h2 {
+  font-size: 24px;
+  color: #825a34;
+  background-color: #dce9d4;
+  border-bottom: 2px solid #b8d0aa;
+  text-shadow: 1px 1px #fff;
+}
+
+.featured-garden > article:hover {
+  box-shadow: 0px 0px 3px 3px #b8d0aa;
+  transition: .5s;
+}
+
+.featured-garden h3 {
+  font-size: 20px;
+  color: #825a34;
+  line-height: 60px;
+}
+
+.featured-garden p, .week-tips ol  {
+  font-size: 18px;
+  line-height: 30px;
+  color: #4d4d4d;
+}
+
+/* --------------footer--------------- */
+footer {
+  background-color: #dce9d4;
+}
+
+footer > section {
+  width: calc(100% - 120px)/4;
+  padding-left: 30px;
+  border-right: 1px solid #d6d6d6;
+  border-top: 1px solid #d6d6d6;
+}
+
+footer > section:last-child {
+  padding-right: 30px;
+}
+
+footer h3 {
+  font-size: 22px;
+  color: #878688;
+  text-shadow: 1px 1px #fff;
+}
+
+footer a {
+  font-size: 16px;
+  color: #878688;
+}
+
+footer a > img {
+  width: 25px;
+  height: 20px;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #4d4d4d;
+}

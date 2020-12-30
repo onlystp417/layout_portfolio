@@ -1,0 +1,55 @@
+.describe {
+  background: url('../images/sea-horse-bg.jpg') center/cover no-repeat fixed;
+  padding: 80px 8% 30px 8%;
+  color: $white;
+  @include mediaquery_pc {
+    background-size: 200%;
+  }
+  article {
+    column-count: 1;
+    column-gap: 0;
+    @include mediaquery_pc {
+      column-count: 2;
+      column-gap: 9em;
+    }
+    h4 {
+      font: normal 1.8em $libre;
+      text-transform: capitalize;
+      margin-bottom: 15px;
+    }
+    p {
+      margin-bottom: 15px;
+      font: 400 .9em $lato;
+    }
+    .devider {
+      text-align: center;
+      margin-top: 125px;
+      margin-bottom: 65px;
+      span {
+        @include horizontal-dot;
+        margin: 0 8px;
+      }
+    }
+    .gutter::before {
+      content: "";
+      height: 260px;
+      @include mediaquery_pc {
+        display: block;
+      }
+    }
+  }
+  a {
+    @include button;
+    padding: 10px 0;
+    margin-top: 125px;
+    background: $white;
+    color: $black;
+  }
+}
+
+.switch {
+  display: block;
+  @include mediaquery_pc {
+    display: none;
+  }
+}
