@@ -11,6 +11,7 @@ header{
 }
 
 .logo{
+    width: 8%;
     display: inline-block ;
     position: relative;
     top: 15px;
